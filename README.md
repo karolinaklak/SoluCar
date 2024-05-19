@@ -29,3 +29,11 @@ SoluCar is a desktop application designed to provide real-time vehicle data, man
 6. Run `ng serve` to start the application
 The application should now be accessible at http://localhost:4200.
 
+
+## Code Architecture
+
+SoluCar is structured as follows : 
+
+* 
+
+
