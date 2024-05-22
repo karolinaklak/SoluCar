@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SoluCar.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c66d1f8b90ca7c663dee4fea5135e003744c59cd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+65093646e7cd8971a080d6e8f8321772a12f0f39")]
 [assembly: System.Reflection.AssemblyProductAttribute("SoluCar.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SoluCar.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

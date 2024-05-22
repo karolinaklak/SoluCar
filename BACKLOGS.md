@@ -3,6 +3,11 @@
 
 
 <h2>1. Mise en place de l'architecture hexagonale et des principes du clean code</h2>
+*Création de couches d'application et d'infrastructure pour séparer les préoccupations et faciliter la amintenance et l'extension du projet
+*Mise en place de dépendances inversées pour faciliter les test et la modification ds composants
+*Utilisation de noms de fichiers et de répertoires significatifs pour faciliter la navigation dans le projet
+*Mise en place de règles de style et de conventions de nommage pour assurer la cohérence et la lisibilité du code
+
 
 
 <h2>2. Intégration des données du véhicule en temps réel à partir du protocole OBD</h2>
@@ -33,6 +38,9 @@
 *Mise en place de tests unitaires et d'intégration pour les services de gestion de la cartographie du calculateur
 
 <h2>6. Gestion des stages</h2>
+*Création de services Angular pour récupérer les informations sur els stages du vehicule et les afficher dans l'interface utilisateur
+*Création de fonctionnalités pour ajouter, modifier et supprimer des stages
+*Mise en place de tests unitaires et d'intégration pour les services de gestion des stages
 
 <h2>7. Mise en place de la sécurité et de l'authentification</h2>
 
