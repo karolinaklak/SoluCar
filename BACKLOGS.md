@@ -40,9 +40,11 @@
 <h2>6. Gestion des stages</h2>
 *Création de services Angular pour récupérer les informations sur els stages du vehicule et les afficher dans l'interface utilisateur
 *Création de fonctionnalités pour ajouter, modifier et supprimer des stages
-*Mise en place de tests unitaires et d'intégration pour les services de gestion des stages
+*Mise en place de tests unitaires et d'intégration pour les services de gestion des données du véhicule
 
 <h2>7. Mise en place de la sécurité et de l'authentification</h2>
+*Mettre en place des tests de sécurité pour s'assurer que le projet est protégé contre les attaques courantes
 
 <h2>8. Déploiement et maintenance du projet</h2>
+*Mise en place de mises à jour et de correctifs réguliers pour maintenir le projet à jour et sécurisé
 
