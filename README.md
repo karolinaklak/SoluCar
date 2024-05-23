@@ -1,6 +1,6 @@
 # SoluCar
 
-SoluCar is a desktop application designed to provide real-time vehicle data, manage diagnostic trouble codes, perform ECU mapping, and manage stages. The application is built using C# and Angular, and follows the principles of clean architecture.
+SoluCar is a desktop application designed to provide real-time vehicle data, manage diagnostic trouble codes, perform ECU mapping, and manage stages. The application is built using Java and Angular, and follows the principles of clean architecture.
 
 # Features
 
@@ -11,10 +11,11 @@ SoluCar is a desktop application designed to provide real-time vehicle data, man
 
 # Getting started
 ## Prerequisites
-* .NET 5.0 SDK or later
+* JDK 11 or later
+* Apache Maven 3.6.3 or later
 * Node.js (v14.0.0 or later)
 * Angular CLI (v14.0.0 or later)
-* Visual Studio 2020
+* IDE _ VSCode
 
 ## Installation
 1. Clone the repository
@@ -22,10 +23,11 @@ SoluCar is a desktop application designed to provide real-time vehicle data, man
 2. Navigate to the root directory of the projet : 
 ```cd SoluCar```
 3. Restore the dependencies for the .Net project : 
-```dotnet restore```
+```mvn clean install```
 4. Run ```npm install``` to install the dependencies
-5. Build the .Net project :
-```dotnet build``` 
+5. Build the Java project :
+```cd backend```
+```mvn spring-boot:run``` 
 6. Run `ng serve` to start the application
 The application should now be accessible at http://localhost:4200.
 
