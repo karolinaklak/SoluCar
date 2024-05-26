@@ -14,7 +14,7 @@
 
 *Recherche et sélection d'un adaptateur OBD approprié
 *Intégration d'une biblithèque ou d'un framework OBD dans le backend du projet
-*Création de services Angular pour récupérer les données OBD du véhicule et les afficher dans l'interface utilisateur
+*Création de services JavaFX pour récupérer les données OBD du véhicule et les afficher dans l'interface utilisateur
 *Mise en place de tests unitaires et d'intégration pour les services de données OBD
 
 <h2>3. Création de l'interface utilisateur graphique personnalisée<h2>
