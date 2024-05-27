@@ -1,5 +1,7 @@
 package com.solucar.infrastructure.obd;
 
+import java.io.IOException;
+
 import javax.bluetooth.*;
 import io.github.macfja.obd2.Command;
 import io.github.macfja.obd2.Response;
@@ -29,10 +31,16 @@ public class OBDAdapter {
             Device device = devices.get(0);
             commander.connect(device);
         } catch (IOException e) {
-            throw new IOException("Error connecting to OBD-II device :" + e.getMessage(), e);
+            String errorMessage = "Error connecting to OBD-II device :" + e.getMessage();
+            if (e.getMessage().contains("Service discovery failed")) {
+                errorMessage = "Unable to discover OBD-II device. Please check if it's powered on and paired.";
+            } else if (e.getMessage().contains("Connection refused")) {
+                errorMessage = "Connection to OBD-II device was refused. Please check the device settings.";
+            }
+            throw new IOException(errorMessage,e);
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
-            throw new IOExcepetion("Connection to OBD-II device interrupted.",e);
+            throw new IOException("Connection to OBD-II device interrupted.",e);
         }
     }
     /**

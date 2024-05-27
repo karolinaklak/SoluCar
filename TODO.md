@@ -4,6 +4,7 @@
 * ** #2 ** Create the basic project structure (folders, packages, main classes).
 * ** #3 ** Implement Bluetooth connection to the OBD-II interface.
 * ** #4 ** Handle connection errors and display clear error messages to the user.
+// maybe add a retry logic ?
 
 # Step 2: Reading and Clearing Error Codes
 
