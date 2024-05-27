@@ -1,5 +1,6 @@
 package com.solucar.infrastructure.obd;
 
+import javax.bluetooth.*;
 import io.github.macfja.obd2.Command;
 import io.github.macfja.obd2.Response;
 import io.github.macfja.obd2.command.engine.EngineRPM;
@@ -16,10 +17,31 @@ public class OBDAdapter {
         this.commander = new Commander(connectionType, deviceName);
     }
 
+    
     public void connect() throws IOException {
-        commander.connect();
-    }
+        //commander.connect();
+        try {
+            List<Device> devices = commander.getElm327Devices();
+            if (devices.isEmpty()) {
+                throw new IOException("No paired OBD-II device found");
+            }
 
+            Device device = devices.get(0);
+            commander.connect(device);
+        } catch (IOException e) {
+            throw new IOException("Error connecting to OBD-II device :" + e.getMessage(), e);
+        } catch (InterruptedException e) {
+            Thread.currentThread().interrupt();
+            throw new IOExcepetion("Connection to OBD-II device interrupted.",e);
+        }
+    }
+    /**
+     * Executes a given OBD command and returns the result.
+     * 
+     * @param command The OBD command to be executed.
+     * @return The calculated result from the OBD command.
+     * @throws IOException If there is an error in sending the command or if the command returns an error response.
+     */
     public String executeCommand(Command command) throws IOException {
         Response response = commander.sendCommand(command);
         if (response.isError()) {
