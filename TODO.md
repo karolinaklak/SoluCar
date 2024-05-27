@@ -39,5 +39,4 @@ Step 6: Finalization and Improvements
 *Implement error and exception handling throughout the application.
 *Write unit and integration tests to ensure code quality.
 *Document the code and API for easier maintenance and evolution.
-*Add internationalization of the user interface to support multiple languages.
 *Improve the user interface based on user feedback.
