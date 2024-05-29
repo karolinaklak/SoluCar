@@ -11,10 +11,12 @@ public class DiagnosticCode {
         fetchDetails();
     }
 
+    //TO DO : replace this with a database lookup or external API call
+        
     private void fetchDetails(){
         
     }
-
+    //getters
     public String getCode(){
         return code;
     }
